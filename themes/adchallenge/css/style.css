@@ -1,0 +1,241 @@
+/* This is a place where final css file should be. */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display&display=swap');
+body{
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  color: #626262;
+  position: relative;
+}
+.region-header,
+.region-highlighted,
+.region-footer,
+main {
+  width: 100%;
+max-width: 1000px;
+margin: auto;
+}
+
+header{
+  background-color: white;
+  height: 80px;
+  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  width: 100%;
+}
+
+.region-highlighted{
+    max-width: 800px;
+    padding: 0 30px;
+}
+
+main{
+  margin-bottom: 100px;
+  max-width: 800px;
+}
+
+.region-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.region-header ul.menu{
+  display: flex;
+  margin: 0;
+}
+
+.region-header li{
+  margin: 0 20px;
+}
+
+.region-header li a{
+  color: grey;
+  text-decoration: none;
+}
+
+.region-header li:first-child{
+  display: none;
+}
+
+.site-name a{
+  font-family: 'Inconsolata', monospace;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 24px;
+}
+
+#block-theperfectweekendgetaway{
+  margin-top: 200px;
+  position:relative;
+}
+
+#block-theperfectweekendgetaway h2::before{
+  content:"";
+  position: absolute;
+  top: -10px;
+  width: 100px;
+  height: 3px;
+  background-color: #626262;
+}
+
+.view-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.view-content .views-row{
+  width: 45%;
+}
+
+.view-content .views-row img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.view-content .views-row p {
+    height: 66px;
+    overflow: hidden;
+}
+
+.field__label {
+    font-weight: bold;
+    display: none!important;
+}
+
+.feed-icons{
+  display: none;
+}
+
+.field__item a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Ubuntu";
+  font-weight: lighter;
+  color: #b4ad9e;
+}
+
+li.node-readmore{
+  display: none !important;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 23px;
+}
+
+h2 a{
+  text-decoration: none;
+  color: #626262;
+}
+
+footer{
+  background-color: lightgrey;
+  height: 100px;
+  color: black;
+  padding: 30px 30px 0;
+}
+
+.region-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.region-footer .menu{
+  display: flex;
+  margin: 0;
+}
+
+.region-footer .menu li a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.node__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.node__content .field--type-entity-reference{
+  order: 2!important;
+}
+
+.node__content div[property="schema:text"]{
+  order: 3!important;
+}
+
+#hamburger{
+  display: none;
+}
+
+img[property="schema:image"]{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 1060px) {
+  header{
+    padding: 30px;
+    width: 96%;
+  }
+  main{
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  .view-content .views-row{
+    width: 100%;
+  }
+
+  header{
+    padding-bottom: 0;
+  }
+
+  .region-header,
+  .region-highlighted,
+  .region-footer,
+   main {
+    width: auto;
+}
+
+  .region-header ul.menu {
+    display: none;
+    background-color: white;
+  }
+
+.region-header ul.menu li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+main{
+  margin-bottom: 50px;
+}
+
+.region-footer {
+    display: block;
+}
+
+#hamburger{
+  width: 30px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  display: block;
+}
+
+}
